@@ -29,6 +29,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=cuscoi_g \
-    PRIVATE_BUILD_DESC="cuscoi_g-user 15 V1UUIS35H.15-41-6-5-1 99a7e release-keys"
-BUILD_FINGERPRINT := motorola/cuscoi/cuscoi:12/V1UUIS35H.15-41-6-5-1/99a7e:user/release-keys
+    PRIVATE_BUILD_DESC="cuscoi-user 15 VUUI35HV-W1-ST23 06a6c6 release-keys"
+BUILD_FINGERPRINT := motorola/cuscoi/cuscoi:15/VUUI35HV-W1-ST23/06a6c6:user/release-keys
 
