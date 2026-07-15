@@ -7,6 +7,7 @@
 # <mount_point>       <fstype>    <device>           <device2>                   <flags>
 # Boot partitions
 /boot                 emmc        /dev/block/bootdevice/by-name/boot             flags=display="Boot";slotselect;backup=1;flashimg=1
+/init_boot            emmc        /dev/block/by-name/init_boot                   flags=display="Init_boot";slotselect;backup=1;flashimg=1
 /dtbo                 emmc        /dev/block/bootdevice/by-name/dtbo             flags=display="DTBO";slotselect;backup=1;flashimg=1
 /vendor_boot          emmc        /dev/block/bootdevice/by-name/vendor_boot      flags=display="Vendor Boot";slotselect;backup=1;flashimg=1
 /vbmeta               emmc        /dev/block/bootdevice/by-name/vbmeta           flags=display="VBMeta";slotselect;backup=1;flashimg=1
@@ -35,7 +36,8 @@
 /vendor_dlkm_image    emmc        /dev/block/bootdevice/by-name/vendor_dlkm      flags=display="Vendor DLKM Image";backup=1;flashimg=1
 
 # Data partitions
-/metadata             ext4        /dev/block/by-name/metadata                    flags=display="Metadata"
+/metadata             f2fs        /dev/block/by-name/metadata                    flags=display="Metadata"
+/data                 f2fs        /dev/block/bootdevice/by-name/userdata         flags=display="Data"
 
 # Firmware partitions
 /persist              ext4        /dev/block/bootdevice/by-name/persist          flags=display="Persist"
