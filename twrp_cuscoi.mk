@@ -14,13 +14,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from cuscoi device
 $(call inherit-product, device/motorola/cuscoi/device.mk)
 
 PRODUCT_DEVICE := cuscoi
-PRODUCT_NAME := twrp_cuscoi
+PRODUCT_NAME := omni_cuscoi
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola edge 50 fusion
 PRODUCT_MANUFACTURER := motorola
